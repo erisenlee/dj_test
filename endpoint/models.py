@@ -9,6 +9,7 @@ class BaseUrl(models.Model):
     def __str__(self):
         return self.host
 
+
 class EndPoint(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     endpoint = models.CharField('endpoint', blank=True, null=True, max_length=250, default='')
